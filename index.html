@@ -6,21 +6,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+     <link rel="stylesheet" href="src/output.css">
+     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div class="flex flex-col items-center p-7 rounded-2xl">
-  <div>
-    <img class="size-48 shadow-xl rounded-md" alt="" src="/img/cover.png" />
-  </div>
-  <div class="flex">
-    <span clas>Class Warfare</span>
-    <span>The Anti-Patterns</span>
-    <span class="flex">
-      <span class="font-serif">No. 4</span>
-      <span>·</span>
-      <span>2025</span>
-    </span>
+
+<body class="font-[Dongle] bg-salmon-300">
+<header class="bg-brand-900">
+    <nav class="max-w-6xl mx-auto flex items-center justify-between py-2 px-4">
+
+        <!-- Logo -->
+        <img src="./images/logo.png" alt="Logo" class="h-8">
+
+        <!-- Hamburger button (mobile only) -->
+        <button id="menu-btn" class="md:hidden text-white text-3xl focus:outline-none">
+            ☰
+        </button>
+
+        <!-- Menu -->
+        <ul id="menu"
+            class="hidden md:flex space-x-10 text-xl font-medium text-white">
+            <li><a href="#" class="">Home</a></li>
+            <li><a href="#" class="">About</a></li>
+            <li><a href="#" class="">FAQ</a></li>
+            <li><a href="#" class="">Help</a></li>
+        </ul>
+    </nav>
+
+    <!-- Mobile dropdown -->
+    <ul id="mobile-menu"
+        class="hidden flex-col space-y-2 px-4 pb-3 text-lg font-medium text-white md:hidden bg-brand-900">
+        <li><a href="#" class="block">Home</a></li>
+        <li><a href="#" class="block">About</a></li>
+        <li><a href="#" class="block">FAQ</a></li>
+        <li><a href="#" class="block">Help</a></li>
+    </ul>
+</header>
+<script>
+    const btn = document.getElementById("menu-btn"); 
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    btn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+    });
+</script>
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 m-7 ml-115">
+
+  <!-- Column 1 -->
+  <div class="bg-lavender-400 p-6 flex flex-col md:flex-row md:items-start md:space-x-10 space-y-2 md:space-y-0 text-indigo-900">
+    <strong class="text-4xl text-center md:text-left">What is Eventus</strong>
+    <p class="text-base font-normal max-w-md text-center md:text-left">
+      EventUs is a college app that allows users to join new societies, make new friends, and look at upcoming events.
+    </p>
   </div>
 </div>
+
+<div class="p-5 sm:p-10 md:p-16">
+    <div>
+        <h1 class="text-6xl">What is Featured</h1>
+        <p class="text-darkpurple-200">What can users do?</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-10">
+       <div class="border-r border-b border-l border-gray-400 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r flex flex-col justify-between leading-normal">
+            <img class="object-cover h-full w-full" src="./images/happy.png">
+            <div class="p-4 pt-2 bg-pink-700">
+                <div class="mb-8">
+                    <p class="text-salmon-100 font-bold text-4xl mb-2 inline-block">Meet New Friends</p>
+                    <p class="text-salmon-100 text-sm">Want to share your interests with someone with same stuff or introduce it. Well you can add new people start messaging and start talking.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-r border-b border-l border-gray-400 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r flex flex-col justify-between leading-normal">
+            <img class="object-cover h-full w-full" src="images/society.png" >
+            <div class="p-4 pt-2 bg-pink-700">
+                <div class="mb-8">
+                    <p class="text-salmon-100 font-bold text-4xl mb-2 inline-block">Join Society Clubs </p>
+                    <p class="text-salmon-100 text-sm">LThere’s over 20 societies to join in college. Whether that being something with your interest or whether you want to learn something new. All just with a click on a button!!!</p>
+                </div>
+            </div>
+        </div>
+
+       <div class="border-r border-b border-l border-gray-400 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r flex flex-col justify-between leading-normal">
+           <img class="object-cover h-full w-full" src="images/fun.png" >
+            <div class="p-4 pt-2 bg-pink-700">
+                <div class="mb-8">
+                    <p class="text-salmon-100 font-bold text-4xl mb-2 inline-block">Have FUN!!</p>
+                    <p class="text-salmon-100 text-sm">The Main rule is to have fun. This is a positive app with no negativity or complications what-so-ever. We want our users to feel safe and be able to express themesleves without being different.</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+
+
 </body>
 </html>
