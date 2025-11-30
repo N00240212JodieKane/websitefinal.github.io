@@ -6,16 +6,93 @@
 @import 'tailwindcss/preflight.css' layer(base);
 @import 'tailwindcss/utilities.css' layer(utilities);
 
-@theme {
-    --font-sans: "Dongle", ui-sans-serif, system-ui, sans-serif; 
-    --font-serif: 'Merriweather', ui-serif, Georgia, serif;
 
-    /* Colours */
-    --color-brand-900: #020006; /*Really Dark Purple*/
-    --color-darkpurple-200: #9E99A4;
-    --color-indigo-900: #251133;
-    --color-salmon-100: #FFEBEB;
-    --color-salmon-300: #FFC2C4; 
-    --color-lavender-400: #A267FF;
-    --color-pink-700: #99298F;
+   @theme {
+
+  --font-dongle: "Dongle";
+
+  --radius-0: 0rem;
+  --radius-1: 0.444444444rem;
+  --radius-2: 0.833333333rem;
+  --radius-3: 0.888888888rem;
+  --radius-4: 1.111111111rem;
+  --radius-5: 1.388888888rem;
+  --radius-6: 2.222222222rem;
+
+  /* Dark Purple */
+  --color-dark-purple-900: #020006;
+  --color-dark-purple-800: #05000b;
+  --color-dark-purple-700: #070011;
+  --color-dark-purple-600: #0a0016;
+  --color-dark-purple-500: #0c001c;
+  --color-dark-purple-400: #3d3349;
+  --color-dark-purple-300: #6d6677;
+  --color-dark-purple-200: #9e99a4;
+  --color-dark-purple-100: #ceccd2;
+
+  /* Lavender */
+  --color-lavender-900: #1c0d33;
+  --color-lavender-800: #381a66;
+  --color-lavender-700: #532799;
+  --color-lavender-600: #6f34cc;
+  --color-lavender-500: #8b41ff;
+  --color-lavender-400: #a267ff;
+  --color-lavender-300: #b98dff;
+  --color-lavender-200: #d1b3ff;
+  --color-lavender-100: #e8d9ff;
+
+  /* Indigo */
+  --color-indigo-900: #251133;
+  --color-indigo-800: #4a2266;
+  --color-indigo-700: #6f3499;
+  --color-indigo-600: #9445cc;
+  --color-indigo-500: #b956ff;
+  --color-indigo-400: #c778ff;
+  --color-indigo-300: #d59aff;
+  --color-indigo-200: #e3bbff;
+  --color-indigo-100: #f1ddff;
+
+  /* Pink */
+  --color-pink-900: #330e30;
+  --color-pink-800: #661c60;
+  --color-pink-700: #99298f;
+  --color-pink-600: #cc37bf;
+  --color-pink-500: #ff45ef;
+  --color-pink-400: #ff6af2;
+  --color-pink-300: #ff8ff5;
+  --color-pink-200: #ffb5f9;
+  --color-pink-100: #ffdafc;
+
+  /* Salmon */
+  --color-salmon-900: #331f1f;
+  --color-salmon-800: #663d3f;
+  --color-salmon-700: #995c5e;
+  --color-salmon-600: #cc7a7e;
+  --color-salmon-500: #ff999d;
+  --color-salmon-400: #ffadb1;
+  --color-salmon-300: #ffc2c4;
+  --color-salmon-200: #ffd6d8;
+  --color-salmon-100: #ffebeb;
+
+  /* Topaz */
+  --color-topaz-900: #332718;
+  --color-topaz-800: #664d30;
+  --color-topaz-700: #997447;
+  --color-topaz-600: #cc9a5f;
+  --color-topaz-500: #ffc177;
+  --color-topaz-400: #ffcd92;
+  --color-topaz-300: #ffdaad;
+  --color-topaz-200: #ffe6c9;
+  --color-topaz-100: #fff3e4;
+
+  /* White (shades) */
+  --color-white-900: #333333;
+  --color-white-800: #666666;
+  --color-white-700: #999999;
+  --color-white-600: #cccccc;
+  --color-white-500: #ffffff;
+  --color-white-400: #ffffff;
+  --color-white-300: #ffffff;
+  --color-white-200: #ffffff;
+  --color-white-100: #ffffff;
 }
