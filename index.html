@@ -76,11 +76,17 @@
 
    
 
-    <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-10"> <!-- Three Column For stacking-->
+    <div class="grid grid-cols-1 md:grid-cols-4 sm:grid-cols-3 gap-10"> <!-- Three Column For stacking-->
       <div class="bg-neutral-primary-soft block max-w-sm p-6 border border-default bg-pink-700 transform transition duration-500 hover:scale-110">
         <img class="rounded-base" src="images/happy.png" alt="" />
         <h5 class="mt-6 mb-2 text-4xl font-semibold tracking-tight text-heading text-salmon-100">Meet New Friends</h5>
     <p class="mb-6 text-body text-salmon-100">Want to share your interests with someone with same stuff or introduce it. Well you can add new people start messaging and start talking.</p>
+</div>
+
+     <div class="bg-neutral-primary-soft block max-w-sm p-6 border border-default bg-pink-700 transform transition duration-500 hover:scale-110">
+        <img class="rounded-base object-fit" src="images/negativity.png" alt="" />
+        <h5 class="mt-6 mb-2 text-4xl font-semibold tracking-tight text-heading text-salmon-100">NO NEGATIVITY ALLOWED</h5>
+    <p class="mb-6 text-body text-salmon-100">If you see something negative instanly report it so the moderator can have a look at it</p>
 </div>
 
        <div class="bg-neutral-primary-soft block max-w-sm p-6 border border-default bg-pink-700 transform transition duration-500 hover:scale-110">
@@ -100,27 +106,37 @@
         <h1 class="text-6xl">Inclusive</h1>
     </div>
 
-    <div class="grid grid-cols-2 md:grid-cols-2 sm:grid-cols-1">
-        <div class="flex bg-white border border-pink-700 rounded-lg shadow-md">
-            <img class='object-cover' src="images/welcome.png" alt="">
-            <div class="p-6 flex flex-col mb-4">
-                    <h5 class="mt-6 mb-2 text-4xl font-semibold tracking-tight text-heading text-salmon-100">Welcoming</h5>
-    <p class="mb-6 text-body text-salmon-100">There’s over 20 societies to join in college. Whether that being something with your interest or whether you want to learn something new. All just with a click on a button!!!</p>
-
-            </div>
+  <div class="space-y-8">
+    <!-- CARD 1 -->
+    <div class="flex flex-col md:flex-row bg-pink-700 rounded-xl p-6 gap-6 max-w-4xl mx-auto transform transition duration-500 hover:scale-110">
+        <!-- TEXT -->
+        <div class="flex-1">
+            <h2 class="text-xl font-semibold text-salmon-100">Welcome all</h2>
+            <p class="text-white mt-1 text-4xl text-salmon-100">
+               We want Our App to be exclusive to everyone. Whether that be a disability or someone new starting in the college we want our app to be safe and correctly moderated.
+            </p>
         </div>
-
-
-          <div class="flex bg-white max-w-lg border border-pink-700 rounded-lg shadow-md">
-            <img class='object-cover' src="images/welcome.png" alt="">
-            <div class="p-6 flex flex-col mb-4">
-                    <h5 class="mt-6 mb-2 text-4xl font-semibold tracking-tight text-heading text-salmon-100">Welcoming</h5>
-    <p class="mb-6 text-body text-salmon-100">There’s over 20 societies to join in college. Whether that being something with your interest or whether you want to learn something new. All just with a click on a button!!!</p>
-
-            </div>
+        <!-- IMAGE -->
+        <img src="images/welcome.png" 
+             class="w-full md:w-40 h-32 rounded-xl object-cover" />
+    </div>
+    <!-- CARD 2 (reversed) -->
+    <div class="flex flex-col md:flex-row-reverse bg-pink-700 rounded-xl p-6 gap-6 max-w-4xl mx-auto transform transition duration-500 hover:scale-110">
+        <!-- TEXT -->
+        <div class="flex-1">
+            <h2 class="text-xl font-semibold text-salmon-100">FAQ</h2>
+            <p class="text-white mt-1 text-4xl text-salmon-100">
+                Got a Question, Go to our FAQ page to put in the question you looking for our team will be happy to answer!!!
+            </p>
         </div>
+        <!-- IMAGE -->
+        <img src="images/welcome.png" 
+             class="w-full md:w-40 h-32 rounded-xl object-cover" />
     </div>
 </div>
+
+
+
 
 
 <div class="p-5 sm:p-10 md:p-16">
@@ -128,30 +144,25 @@
     </div>
 
 
-    <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-1">
-        <div>
+    <div class="grid grid-cols-2 md:grid-cols-4 sm:grid-cols-1">
+        <div class="justify-center">
             <img class="h-18 ml-45 mb-7 transform transition duration-500 hover:scale-110" src="images/app_store.png" alt="">
             <img class="h-8 ml-43 transform transition duration-500 hover:scale-110" src="images/google_play.png" alt="">
         </div>
          <div>
-            <img class="h-40 ml-5 mb-7" src="images/mobile.png" alt="">
+            <img class="h-40 justify-center mb-7" src="images/mobile.png" alt="">
+        </div> 
+        <div>  
+<h1 class="p-5 sm:p-10 md:p-6 text-6xl">Sign Up Now</h1>
+       
+            <label for="email" class="block mb-2.5 text-sm font-medium text-heading"></label>
+              <input type="email" id="email" class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body" placeholder="Email"/>
+             <label for="password" class="block mb-2.5 text-sm font-medium text-heading"></label>
+              <input type="password" id="password" class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-1 py-2 shadow-xs placeholder:text-body" placeholder="Password"/>
         </div>
-
-        <div class=""></div>
     </div>
 
-
-
-
-
-
-
-
-
-
-
-</body>
-<footer class="bg-dark-purple-900">
+    <footer class="bg-dark-purple-900">
         <footer class="max-w-6xl mx-auto flex items-center justify-between py-2 px-4">
 
         <div>
@@ -189,4 +200,6 @@
         footerMenu.classList.toggle("hidden");
     });
 </script>
+
+</body>
 </html>
