@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EventUs Website</title>
      <link rel="stylesheet" href="src/output.css">
      
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,9 +13,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
 </head>
 
-<body class="font-[Dongle] bg-salmon-300">
+<body class="font-[Dongle] bg-white-100">
 <header class="bg-dark-purple-900">
-    <nav class="max-w-6xl mx-auto flex items-center justify-between py-2 px-4">
+    <nav class="max-w-6xl mx-auto flex items-center justify-between py-2 px-4 sticky top-0">
 
         <!-- Logo -->
         <img src="./images/logo.png" alt="Logo" class="h-8">
@@ -24,7 +24,6 @@
         <button id="menu-btn" class="md:hidden text-white text-3xl focus:outline-none">
             ☰
         </button>
-
         <!-- Menu -->
         <ul id="menu"
             class="hidden md:flex space-x-10 text-xl font-medium text-white">
@@ -56,11 +55,11 @@
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 m-7 justify-center">
 
   <!-- Column 1 -->
-  <div class="bg-lavender-400 p-6 flex flex-col md:flex-row md:items-start md:space-x-10 space-y-2 md:space-y-0 text-indigo-900">
+  <div class="bg-lavender-400 p-6 justify-center flex flex-col md:flex-row  md:space-x-10 space-y-2 md:space-y-0 text-indigo-900">
     <strong class="text-4xl text-center">What is Eventus</strong>
   </div>
 
-  <div class="bg-lavender-400 p-6 flex flex-col md:flex-row md:items-start md:space-x-10 space-y-2 md:space-y-0 text-indigo-900">
+  <div class="bg-lavender-400 p-6 flex flex-col md:flex-row  md:space-x-10 space-y-2 md:space-y-0 text-indigo-900">
     <p class="text-base font-normal max-w-md text-left md:text-center">
       EventUs is a college app that allows users to join new societies, make new friends, and look at upcoming events.
     </p>
@@ -79,39 +78,25 @@
 
     <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-10"> <!-- Three Column For stacking-->
       <div class="bg-neutral-primary-soft block max-w-sm p-6 border border-default bg-pink-700 transform transition duration-500 hover:scale-110">
-    <a href="#">
         <img class="rounded-base" src="images/happy.png" alt="" />
-    </a>
-    <a href="#">
         <h5 class="mt-6 mb-2 text-4xl font-semibold tracking-tight text-heading text-salmon-100">Meet New Friends</h5>
-    </a>
     <p class="mb-6 text-body text-salmon-100">Want to share your interests with someone with same stuff or introduce it. Well you can add new people start messaging and start talking.</p>
 </div>
 
        <div class="bg-neutral-primary-soft block max-w-sm p-6 border border-default bg-pink-700 transform transition duration-500 hover:scale-110">
-    <a href="#">
         <img class="rounded-base object-cover" src="images/society.png" alt="" />
-    </a>
         <h5 class="mt-6 mb-2 text-4xl font-semibold tracking-tight text-heading text-salmon-100">Join Society clubs</h5>
     <p class="mb-6 text-body text-salmon-100">There’s over 20 societies to join in college. Whether that being something with your interest or whether you want to learn something new. All just with a click on a button!!!</p>
 </div>
 
       <div class="bg-neutral-primary-soft block max-w-sm p-6 border border-default bg-pink-700 transform transition duration-500 hover:scale-110">
-    <a href="#">
         <img class="rounded-base" src="images/fun.png" alt="" />
-    </a>
-    <a href="#">
         <h5 class="mt-6 mb-2 text-4xl font-semibold tracking-tight text-heading text-salmon-100">Have FUN!!!!</h5>
-    </a>
     <p class="mb-6 text-body text-salmon-100">The Main rule is to have fun. This is a positive app with no negativity or complications what-so-ever</p>
-</div>
-
-
-    
+</div> 
 </div>
 
  <div class="p-5 sm:p-10 md:p-16">
-    <div>
         <h1 class="text-6xl">Inclusive</h1>
     </div>
 
@@ -138,6 +123,22 @@
 </div>
 
 
+<div class="p-5 sm:p-10 md:p-16">
+        <h1 class="text-6xl">Where to Download</h1>
+    </div>
+
+
+    <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-1">
+        <div>
+            <img class="h-18 ml-45 mb-7 transform transition duration-500 hover:scale-110" src="images/app_store.png" alt="">
+            <img class="h-8 ml-43 transform transition duration-500 hover:scale-110" src="images/google_play.png" alt="">
+        </div>
+         <div>
+            <img class="h-40 ml-5 mb-7" src="images/mobile.png" alt="">
+        </div>
+
+        <div class=""></div>
+    </div>
 
 
 
@@ -146,6 +147,10 @@
 
 
 
+
+
+
+</body>
 <footer class="bg-dark-purple-900">
         <footer class="max-w-6xl mx-auto flex items-center justify-between py-2 px-4">
 
@@ -184,8 +189,4 @@
         footerMenu.classList.toggle("hidden");
     });
 </script>
-
-
-
-</body>
 </html>
