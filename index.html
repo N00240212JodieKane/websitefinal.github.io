@@ -16,8 +16,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
-
-<body class="font-[Dongle] bg-lavender-100">
+<body class="font-[Dongle] bg-lavender-100 min-h-screen">
 <header class="bg-dark-purple-900">
     <nav class="max-w-6xl mx-auto flex items-center justify-between py-2 px-4 sticky top-10">
 
@@ -57,11 +56,11 @@
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 m-7 justify-center">
 
   <!-- Column 1 -->
-  <div class="bg-lavender-800 p-6 justify-center flex flex-col md:flex-row  md:space-x-10 space-y-2 md:space-y-0 text_sub_heading">
+  <div class="bg-lavender-800 p-6 justify-center flex flex-col md:flex-row  md:space-x-10 space-y-2 md:space-y-0 text_sub_heading rounded-lg shadow-lg border border-gray-200">
     <strong class="text-4xl text-center mt-3">What is Eventus</strong>
   </div>
 
-  <div class="bg-lavender-800 p-6 flex flex-col md:flex-row  md:space-x-10 space-y-2 md:space-y-0">
+  <div class="bg-lavender-800 p-6 flex flex-col md:flex-row  md:space-x-10 space-y-2 md:space-y-0 rounded-lg shadow-lg border border-gray-200">
     <p class="text-base font-normal max-w-md text-left md:text-center text_content ml-3 mt-3">
       EventUs is a college app that allows users to join new societies, make new friends, and look at upcoming events.
     </p>
@@ -225,45 +224,9 @@
     </div>
 </div>
 
-
-
-<header class="bg-dark-purple-900">
-    <nav class="max-w-6xl mx-auto flex items-center justify-between py-2 px-4 sticky top-10">
-
-        <!-- Logo -->
-        <img src="./images/logo.png" alt="Logo" class="h-8">
-
-        <!-- Hamburger button (mobile only) -->
-        <button id="menu-btn" class="md:hidden text-white text-3xl focus:outline-none">
-            🍔
-        </button>
-        <!-- Menu -->
-        <ul id="menu"
-            class="hidden md:flex space-x-5 text-xl font-medium text-white">
-            <li><a href="#" class="">About</a></li>
-            <li><a href="#" class="">FAQ</a></li>
-            <li><a href="#" class="">Help</a></li>
-        </ul>
-    </nav>
-
-    <!-- Mobile dropdown -->
-    <ul id="mobile-menu1"
-        class="hidden flex-col space-y-2 px-4 pb-3 text-lg font-medium text-white md:hidden bg-brand-900">
-        <li><a href="#" class="block">About</a></li>
-        <li><a href="#" class="block">FAQ</a></li>
-        <li><a href="#" class="block">Help</a></li>
-    </ul>
-</header>
-<script>
-    const btn1 = document.getElementById("menu-btn"); 
-    const mobileMenu1 = document.getElementById("mobile-menu1");
-
-    btn1.addEventListener("click", () => {
-        mobileMenu1.classList.toggle("hidden");
-    });
-</script>
-
-
+<div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 justify-between gap-170">
+    <p class="justify-left">App By Group Nielson</p>
+    <p class="">Website By Jodie Kane</p>
+</div>
 </body>
-
 </html>
