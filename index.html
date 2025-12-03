@@ -13,9 +13,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
 </head>
 
-<body class="font-[Dongle] bg-white-100">
+<body class="font-[Dongle] bg-lavender-100">
 <header class="bg-dark-purple-900">
-    <nav class="max-w-6xl mx-auto flex items-center justify-between py-2 px-4 sticky top-0">
+    <nav class="max-w-6xl mx-auto flex items-center justify-between py-2 px-4 sticky top-10">
 
         <!-- Logo -->
         <img src="./images/logo.png" alt="Logo" class="h-8">
@@ -55,12 +55,12 @@
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 m-7 justify-center">
 
   <!-- Column 1 -->
-  <div class="bg-lavender-400 p-6 justify-center flex flex-col md:flex-row  md:space-x-10 space-y-2 md:space-y-0 text-indigo-900">
-    <strong class="text-4xl text-center">What is Eventus</strong>
+  <div class="bg-pink-700 p-6 justify-center flex flex-col md:flex-row  md:space-x-10 space-y-2 md:space-y-0 text_sub_heading">
+    <strong class="text-4xl text-center mt-3">What is Eventus</strong>
   </div>
 
-  <div class="bg-lavender-400 p-6 flex flex-col md:flex-row  md:space-x-10 space-y-2 md:space-y-0 text-indigo-900">
-    <p class="text-base font-normal max-w-md text-left md:text-center">
+  <div class="bg-pink-700 p-6 flex flex-col md:flex-row  md:space-x-10 space-y-2 md:space-y-0">
+    <p class="text-base font-normal max-w-md text-left md:text-center text_content ml-3 mt-3">
       EventUs is a college app that allows users to join new societies, make new friends, and look at upcoming events.
     </p>
   </div>
@@ -84,13 +84,13 @@
 </div>
 
      <div class="stacking_card">
-        <img class="rounded-base object-fit" src="images/negativity.png" alt="" />
+        <img class="rounded-base object-cover" src="images/negativity.png" alt="" />
         <h5 class="mt-6 mb-2 text-4xl font-semibold tracking-tight text-heading text-salmon-100">NO NEGATIVITY ALLOWED</h5>
     <p class="text_content">If you see something negative instanly report it so the moderator can have a look at it</p>
 </div>
 
        <div class="stacking_card">
-        <img class="rounded-base object-cover" src="images/society.png" alt="" />
+        <img class="rounded-base" src="images/society.png" alt="" />
         <h5 class="stacking_sub_heading">Join Society clubs</h5>
     <p class="text_content">There’s over 20 societies to join in college. Whether that being something with your interest or whether you want to learn something new. All just with a click on a button!!!</p>
 </div>
@@ -101,6 +101,38 @@
     <p class="text_content">The Main rule is to have fun. This is a positive app with no negativity or complications what-so-ever</p>
 </div> 
 </div>
+
+ <div class="p-5 sm:p-10 md:p-16">
+    <div>
+        <h1 class="text-6xl">What is Included</h1>
+    </div>
+
+
+
+  <div class="grid grid-cols-1 md:grid-cols-4 sm:grid-cols-4 gap-10"> <!-- Four Column For stacking-->
+      <div class="stacking_card_1">
+        <img class="rounded-base" src="images/profile.png" alt="" />
+        <h5 class="stacking_sub_heading">Make A Profile</h5>
+      
+</div>
+
+     <div class="stacking_card_1">
+        <img class="rounded-base object-cover" src="images/search.png" alt="" />
+        <h5 class="stacking_sub_heading text-center">Search What You Need</h5>
+</div>
+
+       <div class="stacking_card_1">
+        <img class="rounded-base" src="images/rsvp.png" alt="" />
+        <h5 class="stacking_sub_heading text-center">Attend An Event</h5>
+</div>
+
+      <div class="stacking_card_1">
+        <img class="rounded-base" src="images/message.png" alt="" />
+        <h5 class="stacking_sub_heading text-center">Chat With Friends!!!</h5>
+</div> 
+</div>
+
+
 
  <div class="p-5 sm:p-10 md:p-16">
         <h1 class="text-6xl">Inclusive</h1>
@@ -143,75 +175,43 @@
     </div>
 
 
-<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 justify-items-center px-6">
-    <div class="text-center">
-        <img class="h-48 mx-auto mb-7" src="images/mobile.png" alt="">
-        <img class="h-48 mx-auto mb-7 transform transition duration-500 hover:scale-110" src="images/app_store.png" alt="">
-         <img class="h-48 mx-auto mb-7 transform transition duration-500 hover:scale-110" src="images/Google-Play-Store-app.png" alt="">
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 justify-items-center px-10 ">
+    <div class="flex flex-col sm:flex-row items-center gap-10 ">
+    
+    <!-- Left column: store badges -->
+    <div class="flex flex-col items-center space-y-4">
+        <img class="h-20 transition duration-500 hover:scale-110" src="images/app_store.png" alt="">
     </div>
 
-    <div class="md:col-span-3 w-full max-w-md ml-15">
+    <!-- Right column: mobile phone -->
+    <img class="h-67" src="images/mobile.png" alt="">
+</div>
+
+
+    <div class="md:col-span-3 w-full max-w-md ml-150mb-20">
         <h1 class="text-5xl text-center font-semibold mb-10">Sign Up Now</h1>
 
-        <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Email</label>
+       
         <input 
             type="email" 
             id="email"
-            class="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg 
-                   focus:ring-purple-600 focus:border-purple-600 block w-full px-3 py-2 mb-4"
+            class="bg-topaz-100 border border-pink-300 text-pink-900 text-sm rounded-lg 
+                   focus:ring-purple-600 focus:border-purple-600 block w-full px-3 py-2"
             placeholder="Email"
         />
-
-        <label for="password" class="block mb-2 text-sm font-medium text-gray-900">Password</label>
         <input 
             type="password" 
             id="password"
-            class="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg 
-                   focus:ring-purple-600 focus:border-purple-600 block w-full px-3 py-2"
+            class="bg-topaz-100 border border-pink-300 text-pink-900 text-sm rounded-lg 
+                   focus:ring-purple-600 focus:border-purple-600 block w-full px-3 py-2 mt-2"
             placeholder="Password"
         />
+        <button class="bg-pink-300 hover:bg-pink-600 text_content py-2 px-4 rounded-full mt-5">Submit</button>
     </div>
 </div>
 
-<!-- FOOTER -->
-<footer class="bg-dark-purple-900 mt-20">
-    <nav class="max-w-6xl mx-auto flex items-center justify-between py-4 px-6">
 
-        <!-- Logo -->
-        <img src="./images/logo.png" alt="Logo" class="h-8">
 
-        <!-- Hamburger button -->
-        <button id="menu-btn" class="md:hidden text-white text-3xl focus:outline-none">
-            ☰
-        </button>
-
-        <!-- Desktop Menu -->
-        <ul id="menu" class="hidden md:flex space-x-10 text-xl font-medium text-white">
-            <li><a href="#" class="hover:text-gray-300">Home</a></li>
-            <li><a href="#" class="hover:text-gray-300">About</a></li>
-            <li><a href="#" class="hover:text-gray-300">FAQ</a></li>
-            <li><a href="#" class="hover:text-gray-300">Help</a></li>
-        </ul>
-    </nav>
-
-    <!-- Mobile dropdown -->
-    <ul id="mobile-menu"
-        class="hidden flex-col space-y-3 px-6 py-4 text-lg font-medium text-white bg-dark-purple-800 md:hidden">
-        <li><a href="#" class="block hover:text-gray-300">Home</a></li>
-        <li><a href="#" class="block hover:text-gray-300">About</a></li>
-        <li><a href="#" class="block hover:text-gray-300">FAQ</a></li>
-        <li><a href="#" class="block hover:text-gray-300">Help</a></li>
-    </ul>
-</footer>
-
-<script>
-    const btn1 = document.getElementById("menu-btn");
-    const mobileMenu1 = document.getElementById("mobile-menu");
-
-    btn1.addEventListener("click", () => {
-        mobileMenu1.classList.toggle("hidden");
-    });
-</script>
 
 </body>
 

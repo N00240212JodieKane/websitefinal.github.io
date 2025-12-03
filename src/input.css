@@ -2,6 +2,7 @@
 
 @theme {
 
+  
   --font-dongle: "Dongle";
 
   --radius-0: 0rem;
@@ -92,6 +93,11 @@
 .stacking_card {
   @apply p-6 bg-pink-700 rounded-lg shadow-lg border border-gray-200 transform transition duration-500 hover:scale-110;
 }
+
+.stacking_card_1 {
+  @apply p-6 bg-pink-700 rounded-lg shadow-lg border border-gray-200;
+}
+
 
 .responsive_card {
   @apply flex flex-col md:flex-row bg-pink-700 rounded-xl p-6 gap-6 max-w-4xl mx-auto transform transition duration-500 hover:scale-110;
