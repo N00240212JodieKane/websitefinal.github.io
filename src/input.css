@@ -115,6 +115,10 @@
   @apply text-xl font-semibold text-salmon-100;
 }
 
+.text_sub_heading1 {
+  @apply text-2xl font-semibold text-salmon-100;
+}
+
 .stacking_sub_heading{
   @apply mt-6 mb-2 text-4xl font-semibold tracking-tight text-salmon-100;
 }
