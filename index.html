@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,23 +11,18 @@
 <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
 
 
-  <script src="https://cdn.tailwindcss.com"></script>
-
 </head>
-<body class="font-[Dongle] bg-lavender-100 min-h-screen">
+<body class="font-[Dongle] bg-lavender-100">
 <header class="bg-dark-purple-900">
-    <nav class="max-w-6xl mx-auto flex items-center justify-between py-2 px-4 sticky top-10">
+    <nav class="max-w-6xl mx-auto flex items-center justify-between py-2 px-4">
 
         <!-- Logo -->
-        <img src="./images/logo.png" alt="Logo" class="h-8">
+        <img src="images/logo.png" alt="Logo" class="h-15">
 
         <!-- Hamburger button (mobile only) -->
-        <button id="menu-btn" class="md:hidden text-white text-3xl focus:outline-none">
-            🍔
-        </button>
-        <!-- Menu -->
+        <button id="menu-btn" class="md:hidden text-white text-3xl focus:outline-none">🍔</button>
         <ul id="menu"
-            class="hidden md:flex space-x-4 text-xl font-medium text-white">
+            class="hidden md:flex space-x-5 text-4xl text-white">
             <li><a href="#" class="">About</a></li>
             <li><a href="#" class="">FAQ</a></li>
             <li><a href="#" class="">Help</a></li>
@@ -53,15 +46,15 @@
     });
 </script>
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6 m-7 justify-center">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 m-10 justify-center">
 
   <!-- Column 1 -->
   <div class="bg-lavender-800 p-6 justify-center flex flex-col md:flex-row  md:space-x-10 space-y-2 md:space-y-0 text_sub_heading rounded-lg shadow-lg border border-gray-200">
-    <strong class="text-4xl text-center mt-3">What is Eventus</strong>
+    <strong class="mt-3">What is Eventus</strong>
   </div>
 
   <div class="bg-lavender-800 p-6 flex flex-col md:flex-row  md:space-x-10 space-y-2 md:space-y-0 rounded-lg shadow-lg border border-gray-200">
-    <p class="text-base font-normal max-w-md text-left md:text-center text_content ml-3 mt-3">
+    <p class="text-base font-normal max-w-md text-left md:text-center text_content1 ml-3 mt-3">
       EventUs is a college app that allows users to join new societies, make new friends, and look at upcoming events.
     </p>
   </div>
@@ -73,77 +66,64 @@
     <div>
         <h1 class="text-6xl text-center">What is Featured</h1>
     </div>
+ </div>
 
    
 
-    <div class="grid grid-cols-1 md:grid-cols-4 sm:grid-cols-3 gap-10"> <!-- Four Column For stacking-->
-      <div class="stacking_card fade-card opacity-0 translate-y-6 transition-all duration-700">
-        <img class="rounded-base" src="images/happy.png" alt="" />
-        <h5 class="mt-6 mb-2 text-4xl font-semibold tracking-tight text-heading text-salmon-100">Meet New Friends</h5>
+    <div class="grid grid-cols-1 md:grid-cols-4 sm:grid-cols-2 gap-10"> <!-- Four Column For stacking-->
+      <div class="stacking_card">
+        <img class="rounded-base" src="images/happy.png" alt="Happy" />
+        <h5 class="stacking_sub_heading">Meet New Friends</h5>
     <p class="text_content">Want to share your interests with someone with same stuff or introduce it. Well you can add new people start messaging and start talking.</p>
 </div>
 
-     <div class="stacking_card fade-card opacity-0 translate-y-6 transition-all duration-700">
-        <img class="rounded-base object-cover" src="images/negativity.png" alt="" />
-        <h5 class="mt-6 mb-2 text-4xl font-semibold tracking-tight text-heading text-salmon-100">NO NEGATIVITY ALLOWED</h5>
+     <div class="stacking_card">
+        <img class="rounded-base object-cover" src="images/negativity.png" alt="Be Postive" />
+        <h5 class="stacking_sub_heading">NO NEGATIVITY ALLOWED</h5>
     <p class="text_content">If you see something negative instanly report it so the moderator can have a look at it</p>
 </div>
 
-       <div class="stacking_card fade-card opacity-0 translate-y-6 transition-all duration-700">
-        <img class="rounded-base" src="images/society.png" alt="" />
+       <div class="stacking_card">
+        <img class="rounded-base" src="images/society.png" alt="Societies" />
         <h5 class="stacking_sub_heading">Join Society clubs</h5>
     <p class="text_content">There’s over 20 societies to join in college. Whether that being something with your interest or whether you want to learn something new. All just with a click on a button!!!</p>
 </div>
 
-      <div class="stacking_card fade-card opacity-0 translate-y-6 transition-all duration-700">
-        <img class="rounded-base" src="images/fun.png" alt="" />
+      <div class="stacking_card">
+        <img class="rounded-base" src="images/fun.png" alt="Fun" />
         <h5 class="stacking_sub_heading">Have FUN!!!!</h5>
     <p class="text_content">The Main rule is to have fun. This is a positive app with no negativity or complications what-so-ever</p>
 </div> 
 </div>
 
- <div class="p-5 sm:p-10 md:p-16">
-    <div>
-        <h1 class="text-6xl text-center">What is Included</h1>
+ 
+    <div class="p-5 sm:p-10 md:p-16">
+        <h1 class="text-6xl text-center">The Objective</h1>
     </div>
+    
 
 
-
-  <div class="grid grid-cols-2 md:grid-cols-4 sm:grid-cols-3 gap-10"> <!-- Four Column For stacking-->
-      <div class="stacking_card_1 fade-card opacity-0 translate-y-6 transition-all duration-700 h-100">
-        <img class="rounded-base" src="images/profile.png" alt="" />
+  <div class="grid grid-cols-1 md:grid-cols-4 sm:grid-cols-2 gap-10"> <!-- Four Column For stacking-->
+      <div class="stacking_card_1">
+        <img class="rounded-base" src="images/profile.png" alt="Profile" />
         <h5 class="text_sub_heading1 text-center">Make A Profile</h5>
       
 </div>
 
-     <div class="stacking_card_1 fade-card opacity-0 translate-y-6 transition-all duration-700 h-100">
-        <img class="rounded-base object-cover" src="images/search.png" alt="" />
+     <div class="stacking_card_1">
+        <img class="rounded-base object-cover" src="images/search.png" alt="Search" />
         <h5 class="text_sub_heading1 text-center">Search What You Need</h5>
 </div>
 
-       <div class="stacking_card_1 fade-card opacity-0 translate-y-6 transition-all duration-700 h-100">
-        <img class="rounded-base" src="images/rsvp.png" alt="" />
+       <div class="stacking_card_1">
+        <img class="rounded-base" src="images/rsvp.png" alt="RSVP" />
         <h5 class="text_sub_heading1 text-center">Attend An Event</h5>
 </div>
 
-      <div class="stacking_card_1 fade-card opacity-0 translate-y-6 transition-all duration-700 h-100">
-        <img class="rounded-base" src="images/message.png" alt="" />
+      <div class="stacking_card_1">
+        <img class="rounded-base" src="images/message.png" alt="Message" />
         <h5 class="text_sub_heading1 text-center">Chat With Friends!!!</h5>
 </div> 
-<script>
-  // Fade-in on scroll
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('opacity-100', 'translate-y-0');
-        entry.target.classList.remove('opacity-0', 'translate-y-6');
-        observer.unobserve(entry.target); // only animate once
-      }
-    });
-  });
-
-  document.querySelectorAll('.fade-card').forEach(el => observer.observe(el));
-</script>
 </div>
 
 
@@ -152,37 +132,28 @@
         <h1 class="text-6xl">Inclusive</h1>
     </div>
 
-  <div class="space-y-8">
-    <!-- CARD 1 -->
+  <div class="space-y-5">
     <div class="responsive_card">
-        <!-- TEXT -->
         <div class="flex-1">
-            <h2 class="text_sub_heading">Welcome all</h2>
+            <h2 class="text_content1">Welcome all</h2>
             <p class="text_content1">
                We want Our App to be exclusive to everyone. Whether that be a disability or someone new starting in the college we want our app to be safe and correctly moderated.
             </p>
         </div>
-        <!-- IMAGE -->
         <img src="images/welcome.png" 
              class="w-full md:w-40 h-32 rounded-xl object-cover" />
     </div>
-    <!-- CARD 2 (reversed) -->
     <div class="responsive_card">  
-        <!-- IMAGE -->
         <img src="images/question.png" 
              class="w-full md:w-40 h-32 rounded-xl object-cover" />
-        <!-- TEXT -->
         <div class="flex-1">
-            <h2 class="text_sub_heading">FAQ</h2>
+            <h2 class="text_content1">FAQ</h2>
             <p class="text_content1">
                 Got a Question, Go to our FAQ page to put in the question you looking for our team will be happy to answer!!!
             </p>
         </div>   
     </div>
 </div>
-
-
-
 
 <div class="p-5 sm:p-10 md:p-16">
         <h1 class="text-6xl text-center">Where to Download</h1>
@@ -198,7 +169,7 @@
     </div>
 
     <!-- Right column: mobile phone -->
-    <img class="h-42" src="images/mobile.png" alt="">
+    <img class="h-52" src="images/mobile.png" alt="">
 </div>
 
 
@@ -224,9 +195,24 @@
     </div>
 </div>
 
-<div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 justify-between gap-170">
-    <p class="justify-left">App By Group Nielson</p>
-    <p class="">Website By Jodie Kane</p>
-</div>
+
+<footer class="bg-dark-purple-900">
+    <nav class="w-full flex items-center justify-between py-2 px-4">
+
+        <div>
+        <p class="text-center text-4xl text-white-100">App By Group Nielson</p>
+        <p class="text-center text-4xl text-white-100">Website By Jodie Kane</p>
+    </div>
+
+    <div>
+        <ul id="menu"
+            class="flex space-x-3 text-4xl text-white md:flex-row">
+            <li><a href="#" class="">About</a></li>
+            <li><a href="#" class="">FAQ</a></li>
+            <li><a href="#" class="">Help</a></li>
+        </ul>
+    </div>
+    </nav>
+</footer>
 </body>
 </html>
